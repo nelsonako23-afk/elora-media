@@ -1,302 +1,224 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elora Media | Creative Vision</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elora | Global Logistics Solutions</title>
+<script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: {
+sans: ['Inter', 'sans-serif'],
+}
+}
+}
+}
+</script>
+<link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap)" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+</style>
 </head>
 <body class="bg-[#09090b] text-white antialiased">
+<nav class="fixed w-full z-50 flex items-center justify-between p-6 lg:px-12 bg-[#09090b]/80 backdrop-blur-md border-b border-zinc-800">
+<div class="flex items-center gap-3">
+<img src="[https://i.imgur.com/8QeO3Ld.png](https://i.imgur.com/8QeO3Ld.png)" alt="Elora Logo" class="w-9 h-9" />
+<span class="text-2xl font-bold tracking-tight">Elora.</span>
+</div>
+<div class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
+<a href="#services" class="hover:text-white transition-colors">Services</a>
+<a href="#process" class="hover:text-white transition-colors">Our Process</a>
+<a href="#about" class="hover:text-white transition-colors">About</a>
+<a href="#contact" class="hover:text-white transition-colors">Contact</a>
+</div>
+<a href="#contact" class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-zinc-200 transition-colors">
+Start Now
+</a>
+</nav>
+<header class="relative flex flex-col items-center justify-center text-center min-h-screen px-6 overflow-hidden">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto mt-20">
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-6">
+We drive 
 
-    <!-- NAVIGATION -->
-    <nav class="fixed w-full z-50 flex items-center justify-between p-6 lg:px-12 bg-[#09090b]/80 backdrop-blur-md border-b border-zinc-800">
-        <div class="flex items-center gap-3">
-           <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100" height="100" rx="24" fill="url(#logo-gradient)"/>
-              <path d="M35 70V30L75 50L35 70Z" fill="white"/>
-              <defs>
-                <linearGradient id="logo-gradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#3B82F6" />
-                  <stop offset="1" stop-color="#8B5CF6" />
-                </linearGradient>
-              </defs>
-           </svg>
-           <span class="text-2xl font-bold tracking-tight">Elora.</span>
-        </div>
-        <div class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-          <a href="#services" class="hover:text-white transition-colors">Services</a>
-          <a href="#work" class="hover:text-white transition-colors">Our Work</a>
-        </div>
-        <a href="mailto:hello@eloramedia.com" class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-zinc-200 transition-colors">
-          Let's Talk
-        </a>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header class="relative flex flex-col items-center justify-center text-center min-h-screen px-6 overflow-hidden">
-        <!-- Background Gradient Orbs -->
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-
-        <div class="relative z-10 max-w-4xl mx-auto mt-20">
-          <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-sm text-zinc-400">
-            Creative Vision. Masterful Execution.
-          </div>
-          <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-6">
-            We shape <br/>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              digital narratives.
-            </span>
-          </h1>
-          <p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto">
-            Elora is a premier media company specializing in high-end video production, brand identity, and immersive digital campaigns.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#work" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-zinc-200 transition-colors">
-              View Our Work
-            </a>
-            <a href="#services" class="border border-zinc-700 text-white px-8 py-4 rounded-full font-bold hover:bg-zinc-900 transition-colors">
-              Explore Services
-            </a>
-          </div>
-        </div>
-    </header>
-
-    <!-- WORK / PORTFOLIO SECTION -->
-    <section id="work" class="py-24 px-6 lg:px-12 bg-[#09090b]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Selected Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?q=80&w=1000&auto=format&fit=crop" alt="Video Production Setup" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                    <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
-                        <h3 class="text-2xl font-bold">Neon Campaigns</h3>
-                        <p class="text-zinc-300">Commercial Production</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Data Analytics" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                    <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
-                        <h3 class="text-2xl font-bold">Aura Tech</h3>
-                        <p class="text-zinc-300">Brand Identity & Digital Strategy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-24 px-6 lg:px-12 bg-[#18181b]">
-        <div class="max-w-7xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Our Expertise</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
-              <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Video Production</h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">Commercials, documentaries, and social-first content shot on cinema-grade equipment.</p>
-            </div>
-            <div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
-              <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Brand Identity</h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">Crafting distinct visual identities, logos, and style guides that resonate with your audience.</p>
-            </div>
-            <div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
-              <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-500 mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Digital Strategy</h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">Data-driven marketing campaigns, SEO, and social media management to scale your reach.</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-12 px-6 lg:px-12 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#09090b]">
-        <div class="flex items-center gap-2">
-           <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100" height="100" rx="20" fill="#3B82F6"/>
-              <path d="M35 70V30L75 50L35 70Z" fill="white"/>
-           </svg>
-           <span class="text-xl font-bold tracking-tight">Elora.</span>
-        </div>
-        <p class="text-zinc-500 text-sm">© 2026 Elora Media. All rights reserved.</p>
-        <div class="flex gap-4 text-zinc-500 text-sm">
-          <a href="#" class="hover:text-white transition-colors">Instagram</a>
-          <a href="#" class="hover:text-white transition-colors">Vimeo</a>
-          <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
-        </div>
-    </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elora Media | Creative Vision</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-[#09090b] text-white antialiased">
-
-    <!-- NAVIGATION -->
-    <nav class="fixed w-full z-50 flex items-center justify-between p-6 lg:px-12 bg-[#09090b]/80 backdrop-blur-md border-b border-zinc-800">
-        <div class="flex items-center gap-3">
-           <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100" height="100" rx="24" fill="url(#logo-gradient)"/>
-              <path d="M35 70V30L75 50L35 70Z" fill="white"/>
-              <defs>
-                <linearGradient id="logo-gradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#3B82F6" />
-                  <stop offset="1" stop-color="#8B5CF6" />
-                </linearGradient>
-              </defs>
-           </svg>
-           <span class="text-2xl font-bold tracking-tight">Elora.</span>
-        </div>
-        <div class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-          <a href="#services" class="hover:text-white transition-colors">Services</a>
-          <a href="#work" class="hover:text-white transition-colors">Our Work</a>
-        </div>
-        <a href="mailto:hello@eloramedia.com" class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-zinc-200 transition-colors">
-          Let's Talk
-        </a>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header class="relative flex flex-col items-center justify-center text-center min-h-screen px-6 overflow-hidden">
-        <!-- Background Gradient Orbs -->
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"></div>
-
-        <div class="relative z-10 max-w-4xl mx-auto mt-20">
-          <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-zinc-800 bg-zinc-900/50 text-sm text-zinc-400">
-            Creative Vision. Masterful Execution.
-          </div>
-          <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-6">
-            We shape <br/>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              digital narratives.
-            </span>
-          </h1>
-          <p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto">
-            Elora is a premier media company specializing in high-end video production, brand identity, and immersive digital campaigns.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#work" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-zinc-200 transition-colors">
-              View Our Work
-            </a>
-            <a href="#services" class="border border-zinc-700 text-white px-8 py-4 rounded-full font-bold hover:bg-zinc-900 transition-colors">
-              Explore Services
-            </a>
-          </div>
-        </div>
-    </header>
-
-    <!-- WORK / PORTFOLIO SECTION -->
-    <section id="work" class="py-24 px-6 lg:px-12 bg-[#09090b]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Selected Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?q=80&w=1000&auto=format&fit=crop" alt="Video Production Setup" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                    <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
-                        <h3 class="text-2xl font-bold">Neon Campaigns</h3>
-                        <p class="text-zinc-300">Commercial Production</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Data Analytics" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
-                    <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
-                        <h3 class="text-2xl font-bold">Aura Tech</h3>
-                        <p class="text-zinc-300">Brand Identity & Digital Strategy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-24 px-6 lg:px-12 bg-[#18181b]">
-        <div class="max-w-7xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Our Expertise</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
-              <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Video Production</h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">Commercials, documentaries, and social-first content shot on cinema-grade equipment.</p>
-            </div>
-            <div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
-              <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Brand Identity</h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">Crafting distinct visual identities, logos, and style guides that resonate with your audience.</p>
-            </div>
-            <div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
-              <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-500 mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Digital Strategy</h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">Data-driven marketing campaigns, SEO, and social media management to scale your reach.</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-12 px-6 lg:px-12 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#09090b]">
-        <div class="flex items-center gap-2">
-           <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100" height="100" rx="20" fill="#3B82F6"/>
-              <path d="M35 70V30L75 50L35 70Z" fill="white"/>
-           </svg>
-           <span class="text-xl font-bold tracking-tight">Elora.</span>
-        </div>
-        <p class="text-zinc-500 text-sm">© 2026 Elora Media. All rights reserved.</p>
-        <div class="flex gap-4 text-zinc-500 text-sm">
-          <a href="#" class="hover:text-white transition-colors">Instagram</a>
-          <a href="#" class="hover:text-white transition-colors">Vimeo</a>
-          <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
-        </div>
-    </footer>
-
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+global logistics Solutions.
+</span>
+</h1>
+<p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-3xl mx-auto">
+Elora is a modern logistics partner offering tailored warehousing, global forwarding, and optimized distribution networks to scale your operations.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+<a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-zinc-200 transition-colors">
+Explore Our Work
+</a>
+<a href="#services" class="border border-zinc-700 text-white px-8 py-4 rounded-full font-bold hover:bg-zinc-900 transition-colors">
+Explore Services
+</a>
+</div>
+<div class="relative max-w-5xl mx-auto mt-24 px-6 py-8 border border-zinc-800 rounded-3xl bg-zinc-900/50 backdrop-blur-sm shadow-xl">
+<div class="absolute inset-0 bg-blue-600/10 rounded-3xl blur-[80px] pointer-events-none"></div>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="p-4 rounded-2xl bg-zinc-900/80">
+<p class="text-5xl font-extrabold tracking-tighter">5+</p>
+<p class="text-sm text-zinc-400 mt-1">Years Experience</p>
+</div>
+<div class="p-4 rounded-2xl bg-zinc-900/80">
+<p class="text-5xl font-extrabold tracking-tighter">200+</p>
+<p class="text-sm text-zinc-400 mt-1">Global Clients</p>
+</div>
+<div class="p-4 rounded-2xl bg-zinc-900/80">
+<p class="text-5xl font-extrabold tracking-tighter">98%</p>
+<p class="text-sm text-zinc-400 mt-1">Delivery Success</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section id="projects" class="py-24 px-6 lg:px-12 bg-[#09090b]">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Core Logistics Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
+<img src="[https://i.imgur.com/L1N3t3H.png](https://i.imgur.com/L1N3t3H.png)" alt="Advanced Fulfillment Center" class="object-cover w-full h-full opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
+<h3 class="text-2xl font-bold">Advanced Fulfillment Center</h3>
+<p class="text-zinc-300">Warehouse Solutions</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl aspect-video bg-zinc-900">
+<img src="[https://i.imgur.com/rNnN3tL.png](https://i.imgur.com/rNnN3tL.png)" alt="Global Trade Network" class="object-cover w-full h-full opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
+<h3 class="text-2xl font-bold">Global Trade Network</h3>
+<p class="text-zinc-300">International Logistics</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="process" class="py-24 px-6 lg:px-12 bg-[#18181b] relative">
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight text-center">Our Process</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="relative p-8 rounded-3xl bg-[#09090b] border border-zinc-800 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6">1</div>
+<h3 class="text-2xl font-bold mb-3">Consultation</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">We meet to define your project, needs, and goals.</p>
+</div>
+<div class="relative p-8 rounded-3xl bg-[#09090b] border border-zinc-800 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6">2</div>
+<h3 class="text-2xl font-bold mb-3">Strategy</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">Our experts craft a tailored logistics roadmap.</p>
+</div>
+<div class="relative p-8 rounded-3xl bg-[#09090b] border border-zinc-800 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6">3</div>
+<h3 class="text-2xl font-bold mb-3">Execution</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">We manage the full deployment, from warehousing to shipping.</p>
+</div>
+<div class="relative p-8 rounded-3xl bg-[#09090b] border border-zinc-800 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-6">4</div>
+<h3 class="text-2xl font-bold mb-3">Delivery</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">Success is confirmed with real-time tracking and final reports.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-24 px-6 lg:px-12 bg-[#09090b]">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 text-center md:text-left">
+<h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">About Elora</h2>
+<p class="text-lg text-zinc-400 mb-8 max-w-2xl">Elora Solutions provides advanced logistics services designed to optimize supply chains globally. We blend modern technology with industry expertise to deliver commitment and reliability in every shipment. Our values define how we work, ensuring trust, innovation, and integrity are integrated into all our operations.</p>
+</div>
+<div class="flex-none grid grid-cols-2 gap-4">
+<div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700">
+<p class="text-lg font-bold">Trust</p>
+<p class="text-xs text-zinc-500">Global Partner Reliability</p>
+</div>
+<div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700">
+<p class="text-lg font-bold">Innovation</p>
+<p class="text-xs text-zinc-500">Tech-Driven Efficiency</p>
+</div>
+<div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700">
+<p class="text-lg font-bold">Commitment</p>
+<p class="text-xs text-zinc-500">On-Time Execution</p>
+</div>
+<div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700">
+<p class="text-lg font-bold">Integrity</p>
+<p class="text-xs text-zinc-500">Transparent Operations</p>
+</div>
+</div>
+</div>
+</section>
+<section id="services" class="py-24 px-6 lg:px-12 bg-[#18181b]">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold mb-16 tracking-tight">Our Expertise</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
+<div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 mb-6">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">Warehousing & Storage</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">Secure, modern warehousing solutions for optimal inventory management.</p>
+</div>
+<div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
+<div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-500 mb-6">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">Distribution & Fulfillment</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">Tailored distribution networks for direct and optimized fulfillment processes.</p>
+</div>
+<div class="p-8 rounded-3xl bg-[#09090b] border border-zinc-800 hover:border-zinc-600 transition-colors">
+<div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-500 mb-6">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5A2.5 2.5 0 0019 9.5V7.25m-4.11 8.213a.5.5 0 01.196.516c-.347.882-1.4 1.885-2.215 1.885h-.5a.5.5 0 01-.176-.032C11.512 17.65 10.9 16.924 10.9 16.924M19 16.924c0-.79-.65-1.424-1.424-1.424h-.5c-.79 0-1.424.65-1.424 1.424"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">Global Logistics</h3>
+<p class="text-zinc-400 text-sm leading-relaxed">Comprehensive international forwarding and optimized customs solutions.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-24 px-6 lg:px-12 bg-[#09090b]">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 relative">
+<div class="absolute bottom-1/2 left-1/2 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="flex-1 text-center md:text-left z-10">
+<h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Connect with Elora</h2>
+<p class="text-lg text-zinc-400 mb-10 max-w-2xl">Connect with our modern logistics team to present your modern needs and discover how our advanced Solutions can integrate efficiency and visibility into your supply chain.</p>
+</div>
+<div class="flex-1 p-10 rounded-3xl bg-zinc-900 border border-zinc-800 z-10">
+<form class="space-y-6">
+<input type="text" placeholder="Your Name" class="w-full px-6 py-4 rounded-full bg-[#09090b] border border-zinc-800 text-sm focus:outline-none focus:border-white transition-colors">
+<input type="email" placeholder="Your Email" class="w-full px-6 py-4 rounded-full bg-[#09090b] border border-zinc-800 text-sm focus:outline-none focus:border-white transition-colors">
+<textarea placeholder="Message" rows="5" class="w-full px-6 py-4 rounded-2xl bg-[#09090b] border border-zinc-800 text-sm focus:outline-none focus:border-white transition-colors"></textarea>
+<button type="submit" class="w-full bg-white text-black px-6 py-4 rounded-full text-sm font-bold hover:bg-zinc-200 transition-colors">
+Connect
+</button>
+</form>
+</div>
+</div>
+</section>
+<footer class="py-12 px-6 lg:px-12 border-t border-zinc-800 bg-[#09090b]">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3">
+<img src="[https://i.imgur.com/8QeO3Ld.png](https://i.imgur.com/8QeO3Ld.png)" alt="Elora Logo" class="w-6 h-6" />
+<span class="text-xl font-bold tracking-tight">Elora.</span>
+</div>
+<div class="flex gap-4 text-zinc-500 text-sm">
+<a href="#services" class="hover:text-white transition-colors">Services</a>
+<a href="#process" class="hover:text-white transition-colors">Our Process</a>
+<a href="#about" class="hover:text-white transition-colors">About</a>
+<a href="#contact" class="hover:text-white transition-colors">Contact</a>
+</div>
+<div class="flex gap-4 text-zinc-500 text-sm">
+<a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+<a href="#" class="hover:text-white transition-colors">X</a>
+<a href="#" class="hover:text-white transition-colors">Instagram</a>
+</div>
+</div>
+<p class="text-center text-zinc-600 text-xs mt-12">© 2026 Elora Solutions. All rights reserved.</p>
+</footer>
 </body>
 </html>
